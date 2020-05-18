@@ -22,3 +22,5 @@ if __name__ == '__main__':
   print(train_x)
 
   epochs, accuracy_sp, accuracy_tp,loss_sp, loss_tp= ridge_ym(model.BindeESN(size_in=16,size_res=32,size_out=3,leaky=0.3), train_loader, test_x, test_y)
+
+  
