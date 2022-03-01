@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
         locales \
         vim \
         git \
+        graphviz libgraphviz-dev\
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
@@ -28,7 +29,12 @@ RUN pip install \
         tensorflow \
         matplotlib \
         deap  \
-        pandas
+        pandas \
+        cloudpickle \
+        scikit-learn\
+        seaborn\
+        pygraphviz\
+        networkx
 
 USER $D_USER
 
